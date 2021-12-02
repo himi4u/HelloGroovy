@@ -71,3 +71,21 @@ println s
 //传入范围
 def s1 = groovy[0..1]
 println s1
+// 减法 被减的字符串如果不包括减的字符串，那返回被减字符串
+def minus = groovy.minus(groovy2)
+println "-"+ minus
+// 反之，结果是减去包含的字符串
+def minus1 = groovy2.minus(groovy)
+println minus1
+// 操作符
+def s2 = groovy2 - groovy
+println s2
+
+//倒序字符串
+def reverse = groovy2.reverse()
+println reverse
+//首字母大写
+println  groovy2.capitalize()
+//判断是否是数字类型的字符串
+println groovy2.isNumber()
+println s2.isNumber()
